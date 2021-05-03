@@ -1,0 +1,5 @@
+/data/*.csv
+/.idea
+/notebooks/.ipynb_checkpoints
+*.hypothesis
+*.pkl
