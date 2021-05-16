@@ -4,12 +4,12 @@ import pandas as pd
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.pipeline import Pipeline
-from ml_project.enities import FeatureParams
+from ml_project.enities.feature_params import FeatureParams
 from sklearn.base import TransformerMixin
 
 
 class FeaturesExtractor(TransformerMixin):
-    """ FeaturesExtractor Class """
+    """ FeaturesExtractor Class. OneHot for category, StandartScaler for numerical """
 
     def __init__(self, feature_params: FeatureParams):
         self.params = feature_params

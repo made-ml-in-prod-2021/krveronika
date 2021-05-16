@@ -1,0 +1,26 @@
+input_data_path: "data/raw/heart.csv"
+output_model_path: "models/model_rf.pkl"
+metric_path: "models/metrics_rf.json"
+output_predict_path: 'data/prediction_logreg.csv'
+splitting_params:
+  validation_size: 0.15
+  random_state: 42
+train_params:
+  model_type: "RandomForestClassifier"
+feature_params:
+  categorical_features:
+    - "sex"
+    - "cp"
+    - "fbs"
+    - "restecg"
+    - "exang"
+    - "slope"
+    - "ca"
+    - "thal"
+  numerical_features:
+    - "age"
+    - "trestbps"
+    - "chol"
+    - "thalach"
+    - "oldpeak"
+  target_col: "target"

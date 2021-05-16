@@ -1,9 +1,18 @@
 from .feature_params import FeatureParams
 from .split_params import SplittingParams
-#from enities.model_params import ClassifierParams
-#from enities.train_pipeline_params import read_training_pipeline_params
+from .train_params import TrainingParams
+from .train_pipeline_params import (
+    read_training_pipeline_params,
+    TrainingPipelineParamsSchema,
+    TrainingPipelineParams
+)
+
 
 __all__ = [
     "FeatureParams",
-    "SplittingParams"
+    "SplittingParams",
+    "TrainingParams",    
+    "TrainingPipelineParams",
+    "TrainingPipelineParamsSchema",
+    "read_training_pipeline_params"
 ]
