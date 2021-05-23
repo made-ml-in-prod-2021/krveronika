@@ -1,0 +1,6 @@
+/data/*.csv
+/.idea
+*.ipynb_checkpoints
+*.hypothesis
+*.pkl
+*.pyc
